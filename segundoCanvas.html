@@ -1,0 +1,22 @@
+<canvas height="400" width="600">
+
+</canvas>
+<script>
+
+	function dibujarCuadro(x, y, color) {
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+		pincel.fillStyle = color;
+		pincel.fillRect(x, y, 50, 50);
+		//stroke es para el contorno
+		pincel.strokeStyle = "black";
+		pincel.strokeRect(x, y, 50, 50);
+
+	}
+
+	dibujarCuadro(0, 0, "green");
+	dibujarCuadro(50, 0, "green");
+	dibujarCuadro(100, 0, "green");
+
+
+</script>
